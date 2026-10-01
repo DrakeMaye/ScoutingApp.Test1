@@ -1,0 +1,30 @@
+{
+  "season": "2026",
+  "event": "Practice",
+  "title": "FRC Scouting",
+  "phases": [
+    {
+      "id": "auto",
+      "label": "Autonomous",
+      "fields": [
+        { "id": "autoScore", "label": "Scored in auto", "type": "number", "min": 0, "defaultValue": 0 },
+        { "id": "autoNotes", "label": "Auto notes", "type": "text" }
+      ]
+    },
+    {
+      "id": "teleop",
+      "label": "Teleop",
+      "fields": [
+        { "id": "scores", "label": "Scoring actions", "type": "counter", "defaultValue": 0 },
+        { "id": "defense", "label": "Played defense", "type": "boolean" }
+      ]
+    },
+    {
+      "id": "endgame",
+      "label": "Endgame",
+      "fields": [
+        { "id": "endgameResult", "label": "Result", "type": "select", "options": ["None", "Attempted", "Partial", "Complete"], "defaultValue": "None" }
+      ]
+    }
+  ]
+}
